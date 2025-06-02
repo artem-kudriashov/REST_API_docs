@@ -1,0 +1,2 @@
+# Storefront widget details
+

@@ -1,0 +1,2 @@
+# Product types and attributes
+
