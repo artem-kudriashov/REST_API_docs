@@ -2,132 +2,20 @@
 hidden: true
 ---
 
-# Instant Site
+# Instant Site (Beta)
 
-### Get started
+{% hint style="warning" %}
+**Instant Site API is in the Beta state**
 
-{% content-ref url="get-instant-site-api-token.md" %}
-[get-instant-site-api-token.md](get-instant-site-api-token.md)
-{% endcontent-ref %}
+This API is for internal use only and is not yet finished. Therefore, its calls/fields can be changed in the future without any backwards compatability.
+{% endhint %}
 
-{% content-ref url="clone-instant-site.md" %}
-[clone-instant-site.md](clone-instant-site.md)
-{% endcontent-ref %}
+Instant Site API is being migrated to **API v3** endpoints, so it's best to use them in your projects. Fine the list of supported API calls below.
 
-### Instant Site changes
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden></th></tr></thead><tbody><tr><td><strong>Get started</strong></td><td><a data-mention href="get-instant-site-api-token.md">get-instant-site-api-token.md</a></td><td></td><td><h4></h4></td></tr><tr><td><strong>Instant Site profile</strong></td><td><a data-mention href="get-instant-site-profile.md">get-instant-site-profile.md</a></td><td></td><td><h4></h4></td></tr></tbody></table>
 
-{% content-ref url="preview-instant-site-changes.md" %}
-[preview-instant-site-changes.md](preview-instant-site-changes.md)
-{% endcontent-ref %}
+### Instant Site API v1
 
-{% content-ref url="publish-instant-site-changes.md" %}
-[publish-instant-site-changes.md](publish-instant-site-changes.md)
-{% endcontent-ref %}
+If you need methods unavailable with API v3, use v1 methods listed below.
 
-{% content-ref url="discard-instant-site-changes.md" %}
-[discard-instant-site-changes.md](discard-instant-site-changes.md)
-{% endcontent-ref %}
-
-### Instant Site profile
-
-{% content-ref url="instant-site-profile/get-instant-site-profile.md" %}
-[get-instant-site-profile.md](instant-site-profile/get-instant-site-profile.md)
-{% endcontent-ref %}
-
-{% content-ref url="instant-site-profile/update-instant-site-profile.md" %}
-[update-instant-site-profile.md](instant-site-profile/update-instant-site-profile.md)
-{% endcontent-ref %}
-
-{% content-ref url="instant-site-profile/create-instant-site-profile.md" %}
-[create-instant-site-profile.md](instant-site-profile/create-instant-site-profile.md)
-{% endcontent-ref %}
-
-### Instant Site pages
-
-{% content-ref url="instant-site-pages/get-list-of-instant-site-pages.md" %}
-[get-list-of-instant-site-pages.md](instant-site-pages/get-list-of-instant-site-pages.md)
-{% endcontent-ref %}
-
-{% content-ref url="instant-site-pages/create-instant-site-page.md" %}
-[create-instant-site-page.md](instant-site-pages/create-instant-site-page.md)
-{% endcontent-ref %}
-
-{% content-ref url="instant-site-pages/update-instant-site-page.md" %}
-[update-instant-site-page.md](instant-site-pages/update-instant-site-page.md)
-{% endcontent-ref %}
-
-{% content-ref url="instant-site-pages/delete-instant-site-page.md" %}
-[delete-instant-site-page.md](instant-site-pages/delete-instant-site-page.md)
-{% endcontent-ref %}
-
-### Instant Site tiles (blocks/sections)
-
-{% content-ref url="instant-site-tiles/get-instant-site-tiles-list.md" %}
-[get-instant-site-tiles-list.md](instant-site-tiles/get-instant-site-tiles-list.md)
-{% endcontent-ref %}
-
-{% content-ref url="instant-site-tiles/update-instant-site-tiles-list.md" %}
-[update-instant-site-tiles-list.md](instant-site-tiles/update-instant-site-tiles-list.md)
-{% endcontent-ref %}
-
-{% content-ref url="instant-site-tiles/get-instant-site-tile.md" %}
-[get-instant-site-tile.md](instant-site-tiles/get-instant-site-tile.md)
-{% endcontent-ref %}
-
-{% content-ref url="instant-site-tiles/update-instant-site-tile.md" %}
-[update-instant-site-tile.md](instant-site-tiles/update-instant-site-tile.md)
-{% endcontent-ref %}
-
-{% content-ref url="instant-site-tiles/create-instant-site-tile.md" %}
-[create-instant-site-tile.md](instant-site-tiles/create-instant-site-tile.md)
-{% endcontent-ref %}
-
-{% content-ref url="instant-site-tiles/delete-instant-site-tile.md" %}
-[delete-instant-site-tile.md](instant-site-tiles/delete-instant-site-tile.md)
-{% endcontent-ref %}
-
-{% content-ref url="instant-site-tiles/get-instant-site-tile-showcases.md" %}
-[get-instant-site-tile-showcases.md](instant-site-tiles/get-instant-site-tile-showcases.md)
-{% endcontent-ref %}
-
-{% content-ref url="instant-site-tiles/get-instant-site-tile-config-by-type.md" %}
-[get-instant-site-tile-config-by-type.md](instant-site-tiles/get-instant-site-tile-config-by-type.md)
-{% endcontent-ref %}
-
-### Instant Site tile images
-
-{% content-ref url="instant-site-tiles/instant-site-tile-images/upload-instant-site-tile-image.md" %}
-[upload-instant-site-tile-image.md](instant-site-tiles/instant-site-tile-images/upload-instant-site-tile-image.md)
-{% endcontent-ref %}
-
-{% content-ref url="instant-site-tiles/instant-site-tile-images/get-tile-image-upload-result.md" %}
-[get-tile-image-upload-result.md](instant-site-tiles/instant-site-tile-images/get-tile-image-upload-result.md)
-{% endcontent-ref %}
-
-{% content-ref url="instant-site-tiles/instant-site-tile-images/get-list-of-buckets-for-tile-images.md" %}
-[get-list-of-buckets-for-tile-images.md](instant-site-tiles/instant-site-tile-images/get-list-of-buckets-for-tile-images.md)
-{% endcontent-ref %}
-
-### Instant Site redirects
-
-{% content-ref url="instant-site-redirects/search-instant-site-redirects.md" %}
-[search-instant-site-redirects.md](instant-site-redirects/search-instant-site-redirects.md)
-{% endcontent-ref %}
-
-{% content-ref url="instant-site-redirects/get-instant-site-redirect.md" %}
-[get-instant-site-redirect.md](instant-site-redirects/get-instant-site-redirect.md)
-{% endcontent-ref %}
-
-{% content-ref url="instant-site-redirects/update-instant-site-redirect.md" %}
-[update-instant-site-redirect.md](instant-site-redirects/update-instant-site-redirect.md)
-{% endcontent-ref %}
-
-{% content-ref url="instant-site-redirects/create-instant-site-redirect.md" %}
-[create-instant-site-redirect.md](instant-site-redirects/create-instant-site-redirect.md)
-{% endcontent-ref %}
-
-### Instant Site text labels
-
-{% content-ref url="instant-site-text-labels/get-instant-site-text-labels.md" %}
-[get-instant-site-text-labels.md](instant-site-text-labels/get-instant-site-text-labels.md)
-{% endcontent-ref %}
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th></th><th data-hidden></th></tr></thead><tbody><tr><td><strong>Get started</strong></td><td><a data-mention href="get-instant-site-api-token-apiv1.md">get-instant-site-api-token-apiv1.md</a></td><td><a data-mention href="clone-instant-site.md">clone-instant-site.md</a></td><td></td><td></td><td><h4></h4></td></tr><tr><td><strong>Instant Site changes</strong></td><td><a data-mention href="preview-instant-site-changes.md">preview-instant-site-changes.md</a></td><td><a data-mention href="publish-instant-site-changes.md">publish-instant-site-changes.md</a></td><td><a data-mention href="discard-instant-site-changes.md">discard-instant-site-changes.md</a></td><td></td><td><h4></h4></td></tr><tr><td><strong>Instant Site profile</strong></td><td><a data-mention href="instant-site-profile/get-instant-site-profile-apiv1.md">get-instant-site-profile-apiv1.md</a></td><td><a data-mention href="instant-site-profile/update-instant-site-profile.md">update-instant-site-profile.md</a></td><td><a data-mention href="instant-site-profile/create-instant-site-profile.md">create-instant-site-profile.md</a></td><td></td><td></td></tr><tr><td><strong>Instant Site pages</strong></td><td><a data-mention href="instant-site-pages/get-list-of-instant-site-pages.md">get-list-of-instant-site-pages.md</a></td><td><a data-mention href="instant-site-pages/update-instant-site-page.md">update-instant-site-page.md</a></td><td><a data-mention href="instant-site-pages/create-instant-site-page.md">create-instant-site-page.md</a></td><td><a data-mention href="instant-site-pages/delete-instant-site-page.md">delete-instant-site-page.md</a></td><td></td></tr><tr><td><strong>Instant Site tiles list/config</strong></td><td><a data-mention href="instant-site-tiles/get-instant-site-tiles-list.md">get-instant-site-tiles-list.md</a></td><td><a data-mention href="instant-site-tiles/update-instant-site-tiles-list.md">update-instant-site-tiles-list.md</a></td><td><a data-mention href="instant-site-tiles/get-instant-site-tile-showcases.md">get-instant-site-tile-showcases.md</a></td><td><a data-mention href="instant-site-tiles/get-instant-site-tile-config-by-type.md">get-instant-site-tile-config-by-type.md</a></td><td></td></tr><tr><td><strong>Instant Site tile</strong></td><td><a data-mention href="instant-site-tiles/get-instant-site-tile.md">get-instant-site-tile.md</a></td><td><a data-mention href="instant-site-tiles/update-instant-site-tile.md">update-instant-site-tile.md</a></td><td><a data-mention href="instant-site-tiles/create-instant-site-tile.md">create-instant-site-tile.md</a></td><td><a data-mention href="instant-site-tiles/delete-instant-site-tile.md">delete-instant-site-tile.md</a></td><td></td></tr><tr><td><strong>Instant Site tile images</strong></td><td><a data-mention href="instant-site-tiles/instant-site-tile-images/upload-instant-site-tile-image.md">upload-instant-site-tile-image.md</a></td><td><a data-mention href="instant-site-tiles/instant-site-tile-images/get-tile-image-upload-result.md">get-tile-image-upload-result.md</a></td><td><a data-mention href="instant-site-tiles/instant-site-tile-images/get-list-of-buckets-for-tile-images.md">get-list-of-buckets-for-tile-images.md</a></td><td></td><td></td></tr><tr><td><strong>Instant Site redirects</strong></td><td><a data-mention href="instant-site-redirects/search-instant-site-redirects.md">search-instant-site-redirects.md</a></td><td><a data-mention href="instant-site-redirects/get-instant-site-redirect.md">get-instant-site-redirect.md</a></td><td><a data-mention href="instant-site-redirects/update-instant-site-redirect.md">update-instant-site-redirect.md</a></td><td><a data-mention href="instant-site-redirects/create-instant-site-redirect.md">create-instant-site-redirect.md</a></td><td></td></tr><tr><td><strong>Instant Site text labels</strong></td><td><a data-mention href="instant-site-text-labels/get-instant-site-text-labels.md">get-instant-site-text-labels.md</a></td><td></td><td></td><td></td><td></td></tr></tbody></table>

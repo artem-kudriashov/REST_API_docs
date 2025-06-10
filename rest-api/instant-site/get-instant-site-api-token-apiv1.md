@@ -1,6 +1,6 @@
 # Get Instant Site API token
 
-<mark style="color:blue;">`POST`</mark> `https://app.ecwid.com/instantsite/oauth/token?grant_type={grant_type}&site_id={site_id}&code={code}`
+<mark style="color:blue;">`POST`</mark> `https://vuega.ecwid.com/api/v1/oauth/token?grant_type={grant_type}&site_id={site_id}&code={code}`
 
 ### Required access scopes
 

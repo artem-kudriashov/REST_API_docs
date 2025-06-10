@@ -4,7 +4,7 @@ Generate a link to preview the unpublished changes made to the Instant Site.
 
 ### Step 1. Get a draft token
 
-Get a token with the `draft_code` parameter: [get-instant-site-api-token.md](get-instant-site-api-token.md "mention")
+Get a token with the `draft_code` parameter: [get-instant-site-api-token-apiv1.md](get-instant-site-api-token-apiv1.md "mention")
 
 ### Step 2. Open Instant Site in preview mode
 
