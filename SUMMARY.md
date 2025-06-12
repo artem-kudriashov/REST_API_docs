@@ -3,6 +3,7 @@
 ## REST API
 
 * [REST API overview](README.md)
+* [REST API error codes](rest-api/rest-api-error-codes.md)
 * [Store Profile](rest-api/store-profile/README.md)
   * [Get store profile](rest-api/store-profile/get-store-profile.md)
   * [Update store profile](rest-api/store-profile/update-store-profile.md)
