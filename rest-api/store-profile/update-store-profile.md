@@ -183,13 +183,12 @@ A JSON object with the following fields:
 
 #### **mailNotifications**
 
-| Field                         | Type                                                                                  | Description                                                                                                                                       |
-| ----------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| adminNotificationEmails       | Array of strings                                                                      | Email addresses, which the store admin notifications are sent to                                                                                  |
-| customerNotificationFromEmail | string                                                                                | The email address used as the 'reply-to' field in the notifications to customers                                                                  |
-| customerOrderMessages         | Object [customerOrderMessages](update-store-profile.md#customerordermessages)         | Settings for email notifications that are automatically sent to customers to confirm their orders and keep them informed about the order progress |
-| adminMessages                 | Object [adminMessages](update-store-profile.md#adminmessages)                         | Settings for email notifications that are automatically sent to the store owner and staff members                                                 |
-| customerMarketingMessages     | Object [customerMarketingMessages](update-store-profile.md#customermarketingmessages) | Settings for email notifications that are automatically sent to customers to engage them and increase store sales                                 |
+| Field                     | Type                                                                                  | Description                                                                                                                                       |
+| ------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| adminNotificationEmails   | Array of strings                                                                      | Email addresses, which the store admin notifications are sent to                                                                                  |
+| customerOrderMessages     | Object [customerOrderMessages](update-store-profile.md#customerordermessages)         | Settings for email notifications that are automatically sent to customers to confirm their orders and keep them informed about the order progress |
+| adminMessages             | Object [adminMessages](update-store-profile.md#adminmessages)                         | Settings for email notifications that are automatically sent to the store owner and staff members                                                 |
+| customerMarketingMessages | Object [customerMarketingMessages](update-store-profile.md#customermarketingmessages) | Settings for email notifications that are automatically sent to customers to engage them and increase store sales                                 |
 
 #### **customerOrderMessages**
 
