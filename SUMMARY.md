@@ -270,8 +270,12 @@
   * [Create store](partner-api/partner-api-calls/create-store.md)
 * [Cloning API](partner-api/cloning-api.md)
 
-## API calls list
+## Advanced
 
-* [List of JS API methods](api-calls-list/list-of-js-api-methods.md)
-* [JS API calls](api-calls-list/js-api-calls.md)
-* [REST API calls](api-calls-list/rest-api-calls.md)
+* [REST API calls](advanced/rest-api-calls.md)
+* [JS API calls](advanced/js-api-calls.md)
+
+## OpenAPI
+
+* [Store profile](openapi/store-profile/README.md)
+  * [Get store profile](openapi/store-profile/get-store-profile.md)
