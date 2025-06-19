@@ -1,6 +1,6 @@
 # Create product variation
 
-<mark style="color:blue;">`POST`</mark> `https://app.ecwid.com/api/v3/{storeId}/products/{productId}/combinations/{combinationId}`&#x20;
+<mark style="color:blue;">`POST`</mark> `https://app.ecwid.com/api/v3/{storeId}/products/{productId}/combinations`&#x20;
 
 {% hint style="info" %}
 If specified options do not yet exist, they will be created automatically as a dropdown list (`SELECT` option type).
