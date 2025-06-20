@@ -277,5 +277,6 @@
 
 ## OpenAPI
 
-* [Store profile](openapi/store-profile/README.md)
-  * [Get store profile](openapi/store-profile/get-store-profile.md)
+* [Store profile](openapi/store-profile.md)
+* [Store logo](openapi/store-logo.md)
+* [Orders](openapi/orders.md)
