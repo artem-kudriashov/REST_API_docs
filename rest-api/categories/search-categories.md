@@ -182,7 +182,7 @@ A JSON object with the following fields:
 | seoDescription          | string                                                     | SEO page description for web search results. Recommended length is under 160 characters.                                                                                                                    |
 | seoDecriptionTranslated | string                                                     | SEO page description translations.                                                                                                                                                                          |
 | alt                     | object [alt](search-categories.md#alt)                     | Alt texts of a category image.                                                                                                                                                                              |
-| externalReferenceId     | string                                                     | Internal field for Lightspeed X-Series connection.                                                                                                                                                          |
+| externalReferenceId     | string                                                     | <p>Internal field for Lightspeed X-Series connection.<br><br>This ID is unique for each category in one store.</p>                                                                                          |
 
 #### originalImage
 

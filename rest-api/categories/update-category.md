@@ -69,7 +69,7 @@ A JSON object with the following fields:
 | seoDecriptionTranslated | string                                                 | SEO page description translations.                                                                                                                                       |
 | enabled                 | boolean                                                | `true` if the category is enabled, `false` otherwise. Use `hidden_categories` in request to get disabled categories                                                      |
 | customSlug              | string                                                 | Custom slug for the category page URL.                                                                                                                                   |
-| externalReferenceId     | string                                                 | Internal field for Lightspeed X-Series connection.                                                                                                                       |
+| externalReferenceId     | string                                                 | <p>Internal field for Lightspeed X-Series connection.<br><br>This ID is unique for each category in one store.</p>                                                       |
 
 #### translations
 

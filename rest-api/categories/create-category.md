@@ -70,7 +70,7 @@ A JSON object with the following fields:
 | seoDecriptionTranslated | string                                                 | Available translations for the SEO page description.                                                                                                                     |
 | enabled                 | boolean                                                | `true` if the category is enabled, `false` otherwise. Use `hidden_categories` in request to get disabled categories                                                      |
 | customSlug              | string                                                 | Custom slug for the category page URL.                                                                                                                                   |
-| externalReferenceId     | string                                                 | Internal field for Lightspeed X-Series connection.                                                                                                                       |
+| externalReferenceId     | string                                                 | <p>Internal field for Lightspeed X-Series connection.<br><br>This ID is unique for each category in one store.</p>                                                       |
 
 #### translations
 
@@ -85,7 +85,9 @@ Object with text field translations in the `"lang": "text"` format, where the `"
 
 Translations are available for all active store languages. Only the default language translations are returned if no other translations are provided for the field. Find active store languages with <mark style="color:green;">`GET`</mark> `/profile` request > `languages` > `enabledLanguages`.
 
-{% include "../../.gitbook/includes/rest-api-response-json.md" %}
+### Response JSON
+
+A JSON object with the following fields:
 
 | Field | Type   | Description                          |
 | ----- | ------ | ------------------------------------ |
