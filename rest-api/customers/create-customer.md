@@ -21,9 +21,7 @@ Cache-Control: no-cache
   "customerGroupId": 0,
   "customerGroupName": "General",
   "billingPerson": {
-    "name": "Support team",
-    "firstName": "Support",
-    "lastName": "team"
+    "name": "Support team"
   },
   "taxExempt": false
 }
@@ -61,20 +59,7 @@ The **Authorization** header is required.
 
 A JSON object with the following fields:
 
-| Field             | Type                                                                       | Description                                                                                                                                                                                                                               |
-| ----------------- | -------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| email             | string                                                                     | Customer's email.                                                                                                                                                                                                                         |
-| password          | string                                                                     | <p>Customer's password.<br><br>Only available for stores with the <strong>legacy customer sign-in</strong>.</p>                                                                                                                           |
-| billingPerson     | object [billingPerson](create-customer.md#billingperson)                   | Customer's billing name/address.                                                                                                                                                                                                          |
-| shippingAddresses | array of objects [shippingAddresses](create-customer.md#shippingaddresses) | List of saved shipping addresses for the customer.                                                                                                                                                                                        |
-| contacts          | array of objects [contacts](create-customer.md#contacts)                   | Customer's contact information: email, phone, social media links.                                                                                                                                                                         |
-| customerGroupId   | number                                                                     | ID of the customer group the customer is assigned to.                                                                                                                                                                                     |
-| taxId             | string                                                                     | Customer's tax ID.                                                                                                                                                                                                                        |
-| taxIdValid        | boolean                                                                    | Defines if customer's tax ID is valid.                                                                                                                                                                                                    |
-| taxExempt         | boolean                                                                    | <p>Defines if customer is tax exempt. Requires a valid tax ID.<br><br>Read more about handling tax exempt customers in <a href="https://support.ecwid.com/hc/en-us/articles/213823045-Handling-tax-exempt-customers">Help Center</a>.</p> |
-| acceptMarketing   | boolean                                                                    | <p>Defines if the customer has accepted email marketing. <br><br>If <code>true</code>, you can use customer's email for promotions.</p>                                                                                                   |
-| lang              | string                                                                     | <p>Customer's language code. Customers see storefront and emails in this language.<br><br>This language must be one of the translations enabled in the store.</p>                                                                         |
-| privateAdminNotes | string                                                                     | Personal notes about the customer. Visible only to the store owner.                                                                                                                                                                       |
+<table><thead><tr><th width="197.37109375">Field</th><th width="174.0703125">Type</th><th>Description</th></tr></thead><tbody><tr><td>email</td><td>string</td><td>Customer's email.</td></tr><tr><td>password</td><td>string</td><td>Customer's password.<br><br>Only available for stores with the <strong>legacy customer sign-in</strong>.</td></tr><tr><td>billingPerson</td><td>object <a href="create-customer.md#billingperson">billingPerson</a></td><td>Customer's billing name/address.</td></tr><tr><td>shippingAddresses</td><td>array of objects <a href="create-customer.md#shippingaddresses">shippingAddresses</a></td><td>List of saved shipping addresses for the customer.</td></tr><tr><td>contacts</td><td>array of objects <a href="create-customer.md#contacts">contacts</a></td><td>Customer's contact information: email, phone, social media links.</td></tr><tr><td>customerGroupId</td><td>number</td><td>ID of the customer group the customer is assigned to.</td></tr><tr><td>b2b_b2c</td><td>string</td><td>Defines business-to-customer relation. One of:<br><code>b2c</code> - Business-to-customer (default)<br><code>b2b</code> - Business-to-business</td></tr><tr><td>taxId</td><td>string</td><td>Customer's tax ID.</td></tr><tr><td>taxIdValid</td><td>boolean</td><td>Defines if customer's tax ID is valid.</td></tr><tr><td>taxExempt</td><td>boolean</td><td>Defines if customer is tax exempt. Requires a valid tax ID.<br><br>Read more about handling tax exempt customers in <a href="https://support.ecwid.com/hc/en-us/articles/213823045-Handling-tax-exempt-customers">Help Center</a>.</td></tr><tr><td>acceptMarketing</td><td>boolean</td><td>Defines if the customer has accepted email marketing. <br><br>If <code>true</code>, you can use customer's email for promotions.</td></tr><tr><td>lang</td><td>string</td><td>Customer's language code. Customers see storefront and emails in this language.<br><br>This language must be one of the translations enabled in the store.</td></tr><tr><td>privateAdminNotes</td><td>string</td><td>Personal notes about the customer. Visible only to the store owner.</td></tr></tbody></table>
 
 #### billingPerson
 
@@ -88,7 +73,6 @@ A JSON object with the following fields:
 | countryName         | string | Country name.                                         |
 | postalCode          | string | Postal/ZIP code.                                      |
 | stateOrProvinceCode | string | State/province code, for example, `NY`.               |
-| stateOrProvinceName | string | State/province name.                                  |
 | phone               | string | Customer's phone number.                              |
 
 #### shippingAddresses
@@ -104,7 +88,6 @@ A JSON object with the following fields:
 | countryName         | string | Country name.                                                            |
 | postalCode          | string | Postal/ZIP code.                                                         |
 | stateOrProvinceCode | string | State/province code, for example, `NY`.                                  |
-| stateOrProvinceName | string | State/province name.                                                     |
 | phone               | string | Customer's phone number.                                                 |
 | addressFormatted    | string | Formatted full address. Includes street, city, state, and country names. |
 

@@ -58,11 +58,11 @@ A JSON object with the following fields:
 | Field             | Type                                                                       | Description                                                                                                                                                                                                                               |
 | ----------------- | -------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | email             | string                                                                     | Customer's email.                                                                                                                                                                                                                         |
-| name              | string                                                                     | Customer's full name.                                                                                                                                                                                                                     |
 | billingPerson     | object [billingPerson](update-customer.md#billingperson)                   | Customer's billing name/address.                                                                                                                                                                                                          |
 | shippingAddresses | array of objects [shippingAddresses](update-customer.md#shippingaddresses) | List of saved shipping addresses for the customer.                                                                                                                                                                                        |
 | contacts          | array of objects [contacts](update-customer.md#contacts)                   | Customer's contact information: email, phone, social media links.                                                                                                                                                                         |
 | customerGroupId   | number                                                                     | ID of the customer group the customer is assigned to.                                                                                                                                                                                     |
+| b2b\_b2c          | string                                                                     | <p>Defines business-to-customer relation. One of:<br><code>b2c</code> - Business-to-customer (default)<br><code>b2b</code> - Business-to-business</p>                                                                                     |
 | taxId             | string                                                                     | Customer's tax ID.                                                                                                                                                                                                                        |
 | taxIdValid        | boolean                                                                    | Defines if customer's tax ID is valid.                                                                                                                                                                                                    |
 | taxExempt         | boolean                                                                    | <p>Defines if customer is tax exempt. Requires a valid tax ID.<br><br>Read more about handling tax exempt customers in <a href="https://support.ecwid.com/hc/en-us/articles/213823045-Handling-tax-exempt-customers">Help Center</a>.</p> |
@@ -82,7 +82,6 @@ A JSON object with the following fields:
 | countryName         | string | Country name.                                         |
 | postalCode          | string | Postal/ZIP code.                                      |
 | stateOrProvinceCode | string | State/province code, for example, `NY`.               |
-| stateOrProvinceName | string | State/province name.                                  |
 | phone               | string | Customer's phone number.                              |
 
 #### shippingAddresses
@@ -98,7 +97,6 @@ A JSON object with the following fields:
 | countryName         | string | Country name.                                                            |
 | postalCode          | string | Postal/ZIP code.                                                         |
 | stateOrProvinceCode | string | State/province code, for example, `NY`.                                  |
-| stateOrProvinceName | string | State/province name.                                                     |
 | phone               | string | Customer's phone number.                                                 |
 | addressFormatted    | string | Formatted full address. Includes street, city, state, and country names. |
 
