@@ -23,7 +23,6 @@ Response:
   "email": "ec.apps@lightspeedhq.com",
   "registered": "2021-12-21 06:05:58 +0000",
   "updated": "2024-06-04 21:15:10 +0000",
-  "totalOrderCount": 0,
   "customerGroupId": 0,
   "customerGroupName": "General",
   "billingPerson": {
