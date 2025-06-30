@@ -102,7 +102,8 @@ A JSON object with the following fields:
 
 #### items
 
-| Field | Type   | Description                                                 |
-| ----- | ------ | ----------------------------------------------------------- |
-| id    | number | Unique internal ID of the customer group.                   |
-| name  | string | Customer group name visible to customers on the storefront. |
+| Field               | Type   | Description                                                 |
+| ------------------- | ------ | ----------------------------------------------------------- |
+| id                  | number | Unique internal ID of the customer group.                   |
+| name                | string | Customer group name visible to customers on the storefront. |
+| externalReferenceId | string | External ID for syncing customer goups with other services. |

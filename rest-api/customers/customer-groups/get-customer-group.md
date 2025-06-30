@@ -73,7 +73,8 @@ The **Authorization** header is required.
 
 A JSON object with the following fields:
 
-| Field | Type   | Description                                                 |
-| ----- | ------ | ----------------------------------------------------------- |
-| id    | number | Unique internal ID of the customer group.                   |
-| name  | string | Customer group name visible to customers on the storefront. |
+| Field               | Type   | Description                                                 |
+| ------------------- | ------ | ----------------------------------------------------------- |
+| id                  | number | Unique internal ID of the customer group.                   |
+| name                | string | Customer group name visible to customers on the storefront. |
+| externalReferenceId | string | External ID for syncing customer goups with other services. |

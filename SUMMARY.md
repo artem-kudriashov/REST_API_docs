@@ -127,7 +127,7 @@
   * [Customer groups](rest-api/customers/customer-groups/README.md)
     * [Search customer groups](rest-api/customers/customer-groups/search-customer-groups.md)
     * [Get customer group](rest-api/customers/customer-groups/get-customer-group.md)
-    * [Update customer group name](rest-api/customers/customer-groups/update-customer-group-name.md)
+    * [Update customer group](rest-api/customers/customer-groups/update-customer-group.md)
     * [Create customer group](rest-api/customers/customer-groups/create-customer-group.md)
     * [Delete customer group](rest-api/customers/customer-groups/delete-customer-group.md)
   * [Customer contacts](rest-api/customers/customer-contacts/README.md)
@@ -262,6 +262,13 @@
     * [Create Instant Site redirect](rest-api/instant-site/instant-site-redirects/create-instant-site-redirect.md)
   * [Instant Site text labels](rest-api/instant-site/instant-site-text-labels/README.md)
     * [Get Instant Site text labels](rest-api/instant-site/instant-site-text-labels/get-instant-site-text-labels.md)
+  * [Instant Site themes](rest-api/instant-site/instant-site-themes/README.md)
+    * [Get list of Instant Site themes](rest-api/instant-site/instant-site-themes/get-list-of-instant-site-themes.md)
+    * [Update Instant Site theme](rest-api/instant-site/instant-site-themes/update-instant-site-theme.md)
+    * [Create Instant Site theme](rest-api/instant-site/instant-site-themes/create-instant-site-theme.md)
+    * [Delete Instant Site theme](rest-api/instant-site/instant-site-themes/delete-instant-site-theme.md)
+    * [Get current Instant Site theme](rest-api/instant-site/instant-site-themes/get-current-instant-site-theme.md)
+    * [Update current Instant Site theme](rest-api/instant-site/instant-site-themes/update-current-instant-site-theme.md)
 
 ## Partner API
 

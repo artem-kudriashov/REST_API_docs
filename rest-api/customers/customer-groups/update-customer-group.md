@@ -1,4 +1,4 @@
-# Update customer group name
+# Update customer group
 
 <mark style="color:purple;">`PUT`</mark> `https://app.ecwid.com/api/v3/{storeId}/customer_groups/{groupId}`&#x20;
 
@@ -53,9 +53,10 @@ The **Authorization** header is required.
 
 A JSON object with the following fields:
 
-| Field | Type   | Description                                                 |
-| ----- | ------ | ----------------------------------------------------------- |
-| name  | string | Customer group name visible to customers on the storefront. |
+| Field               | Type   | Description                                                 |
+| ------------------- | ------ | ----------------------------------------------------------- |
+| name                | string | Customer group name visible to customers on the storefront. |
+| externalReferenceId | string | External ID for syncing customer goups with other services. |
 
 ### Response JSON
 
