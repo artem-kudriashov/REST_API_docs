@@ -10,9 +10,9 @@ Your app can send up to **600 requests per minute** with one token. Ecwid will b
 
 If you don't yet have access to Ecwid API, follow the detailed instructions in these articles:
 
-1. [Set up dev environment with Ecwid](https://app.gitbook.com/s/uOzT5egoVTAjMJwRuMQT/get-started/set-up-your-dev-environment-in-ecwid)
-2. [Make your first API call](https://app.gitbook.com/s/uOzT5egoVTAjMJwRuMQT/get-started/make-your-first-api-request)
-3. [Add more features to your app](https://app.gitbook.com/s/uOzT5egoVTAjMJwRuMQT/get-started/add-more-features-to-your-custom-app)
+1. [Set up your dev environment in Ecwid](https://app.gitbook.com/s/uOzT5egoVTAjMJwRuMQT/get-started/set-up-your-dev-environment-in-ecwid "mention")
+2. [Make your first API request](https://app.gitbook.com/s/uOzT5egoVTAjMJwRuMQT/get-started/make-your-first-api-request "mention")
+3. [Add more features to your custom app](https://app.gitbook.com/s/uOzT5egoVTAjMJwRuMQT/get-started/add-more-features-to-your-custom-app "mention")
 
 ### Get started with the popular API calls
 
