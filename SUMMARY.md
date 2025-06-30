@@ -286,4 +286,5 @@
 
 * [Store profile](openapi/store-profile.md)
 * [Store logo](openapi/store-logo.md)
-* [Orders](openapi/orders.md)
+* [Orders](openapi/orders/README.md)
+  * [Order extra fields](openapi/orders/order-extra-fields.md)
