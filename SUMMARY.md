@@ -145,7 +145,7 @@
 * [Discounts](rest-api/discounts/README.md)
   * [Promotions](rest-api/discounts/promotions/README.md)
     * [Search promotions](rest-api/discounts/promotions/search-promotions.md)
-    * [Update promotion](rest-api/discounts/promotions/update-promotion.md)
+    * [Update promotionv](rest-api/discounts/promotions/update-promotionv.md)
     * [Create promotion](rest-api/discounts/promotions/create-promotion.md)
     * [Delete promotion](rest-api/discounts/promotions/delete-promotion.md)
   * [Discount coupons](rest-api/discounts/discount-coupons/README.md)

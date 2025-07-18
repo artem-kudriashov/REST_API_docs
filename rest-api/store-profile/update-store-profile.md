@@ -2,17 +2,6 @@
 description: >-
   Update main store settings, for example: store location, available languages,
   contact info, etc.
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Update store profile

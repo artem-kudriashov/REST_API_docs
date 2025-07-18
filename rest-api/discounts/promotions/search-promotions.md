@@ -110,7 +110,7 @@ A JSON object with the following fields:
 
 | Field           | Type             | Description                                                                                                                                                                               |
 | --------------- | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| attributeId     | number           | Internal attribute ID.                                                                                                                                                                    |
+| attributeAlias  | number           | Alias of the attribute the promotion rule will be applied to (e.g. `BRAND`, `TAGS`).                                                                                                      |
 | attributeValues | array of strings | <p>List of matching attribute values in products, for which the promotion should apply.<br><br>Total maximum number of attribute values <strong>across all attributes</strong> is 30.</p> |
 
 #### combinations

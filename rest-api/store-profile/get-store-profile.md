@@ -2,17 +2,6 @@
 description: >-
   Get basic information about an Ecwid store: settings, store location, email,
   etc.
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Get store profile
