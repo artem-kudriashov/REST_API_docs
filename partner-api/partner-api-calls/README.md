@@ -811,9 +811,11 @@ Before accessing the Developer API, you must ensure that this functionality is s
 
 **Receiving access token (alternative flow for partners)**
 
-To receive token for online store make a POST request to the following endpoint:
+To receive token for online store make a request to the following endpoint:
 
-[**https://my.ecwid.com/api/oauth/token/{ownerid}**](https://my.ecwid.com/api/oauth/token/%7Bownerid%7D) and send the following parameters:
+<mark style="color:blue;">`POST`</mark> `https://my.ecwid.com/api/oauth/token/{ownerid}`&#x20;
+
+And send the following parameters:
 
 | client\_id     | required | Application ID              |
 | -------------- | -------- | --------------------------- |
@@ -824,9 +826,9 @@ To receive token for online store make a POST request to the following endpoint:
 
 Please make sure that the correct domain **my.ecwid.com** is used to make POST request!
 
-Ecwid responds with a JSON-formatted data containing the access token and additional information. Please refer to[ ](http://api.ecwid.com/%23get-access-token)this [reference](broken-reference) to parse the response.
+Ecwid responds with a JSON-formatted data containing the access token and additional information. Please refer to[ ](http://api.ecwid.com/%23get-access-token)this [reference](https://app.gitbook.com/s/uOzT5egoVTAjMJwRuMQT/launch-apps/native-and-external-apps#receive-store-id-and-access-token) to parse the response.
 
-Important: an access token does not expire. So you will need to retrieve the token only once per store and then use it as many times as you need. In other words, you should save the token in your system and use it for all API calls instead of generating it every time you access the store over API.
+**Important:** access tokens do not expire. So you will need to retrieve the token only once per store and then use it as many times as you need. In other words, you should save the token in your system and use it for all API calls instead of generating it every time you access the store over API.
 
 After receiving access token partner should use it to access REST API as described in the API documentation above.
 
