@@ -388,9 +388,9 @@ When using checkout extra fields, do not exceed the following limits:
 
 ### Show extra fields in invoices and emails
 
-You can add order extra fields to customer notifications manually. The field could be optional (the code will check if it exists in the order), but it must have a `title` and `orderDetailsDisplaySection` value (any value other than `hidden`). \
-\
-Read more on the [customization of customer emails](https://support.ecwid.com/hc/en-us/articles/4988505141148-Advanced-customization-of-email-templates-in-Ecwid).
+All extra fields have the `showInNotifications` setting allowing to show extra fields in the customer emails **automatically**. You can access this setting through API or the Ecwid admin if the field was created there.
+
+You can also display extra fields in customer notifications **manually**. This approach is better if email templates in your store are customized. To add a field manually, make sure the field has a `title` and `orderDetailsDisplaySection` value (any value other than `hidden`), then add new code in the email editor using the example below:
 
 <details>
 
@@ -405,6 +405,8 @@ Read more on the [customization of customer emails](https://support.ecwid.com/hc
 ```
 
 </details>
+
+Read more on the [customization of customer emails](https://support.ecwid.com/hc/en-us/articles/4988505141148-Advanced-customization-of-email-templates-in-Ecwid).
 
 ### Manage checkout extra fields with REST API
 
