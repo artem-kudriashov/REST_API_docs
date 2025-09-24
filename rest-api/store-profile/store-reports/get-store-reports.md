@@ -30,15 +30,22 @@ A list of available reports. Chart types include:
 
 **Visitors:**
 
-| reportType             | Сhart type                                                |
-| ---------------------- | --------------------------------------------------------- |
-| allTraffic             | chart                                                     |
-| newVsReturningVisitors | piechart                                                  |
-| visitorsByCities       | <p>piechart<br><br><strong>Not available yet</strong></p> |
-| visitorsByCountry      | barchart OR piechart                                      |
-| visitorsByDevice       | piechart                                                  |
-| visitorsByLanguage     | piechart                                                  |
-| siteEmailActivity      | chart                                                     |
+| reportType                | Сhart type                                                |
+| ------------------------- | --------------------------------------------------------- |
+| allTraffic                | chart                                                     |
+| newVsReturningVisitors    | piechart                                                  |
+| visitorsByCities          | <p>piechart<br><br><strong>Not available yet</strong></p> |
+| visitorsByCountry         | barchart OR piechart                                      |
+| visitorsByDevice          | piechart                                                  |
+| visitorsByLanguage        | piechart                                                  |
+| siteEmailActivity         | piechart                                                  |
+| siteAggregatedActivity    | piechart                                                  |
+| siteGroupActivity         | piechart                                                  |
+| siteSocialActivity        | piechart                                                  |
+| siteContactWidgetActivity | chart                                                     |
+| sitePhoneActivity         | chart                                                     |
+| siteAddressActivity       | chart                                                     |
+| siteLocationMapActivity   | chart                                                     |
 
 **Conversions:**
 
