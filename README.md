@@ -4,7 +4,9 @@ Ecwid REST API allows you to access and manage any store data, payment and shipp
 
 We use OAuth 2.0 authorization simplified for single-store customizations, JSON-formatted data, and a clear structure.&#x20;
 
-Your app can send up to **600 requests per minute** with one token. Ecwid will block the access token if you exceed the limit, and you'll see error 429 in all responses. If you try to use a non-working token, Ecwid will block it after 20 requests per minute or 600 requests per IP.
+Please note that our REST API has **rate limits**.
+
+We accept up to **600 requests per minute** **per token**. If you exceed the limit, all subsequent requests will be ignored with an error 429 and a **"Retry-After": N** header (number **N** is a cooldown) . If more requests continue to come from a non-working token, Ecwid will block it for much longer after 20 requests per minute or a total of 600 requests with non-working tokens per IP.
 
 ### Get access to REST API
 
