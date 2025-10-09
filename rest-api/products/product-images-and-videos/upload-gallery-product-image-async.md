@@ -1,6 +1,6 @@
 # Upload gallery product image (async)
 
-<mark style="color:blue;">`POST`</mark> `https://app.ecwid.com/api/v3/{storeId}/products/{productId}/image/async`&#x20;
+<mark style="color:blue;">`POST`</mark> `https://app.ecwid.com/api/v3/{storeId}/products/{productId}/gallery/async`&#x20;
 
 ### Required access scopes
 
