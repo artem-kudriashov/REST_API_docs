@@ -197,11 +197,11 @@ A JSON object with the following fields:
 
 #### selections
 
-| Field                 | Type   | Description                                                                                                                                                                                          |
-| --------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| selectionTitle        | string | Name of the selected option value.                                                                                                                                                                   |
-| selectionModifier     | number | <p>Price modifier of the selected option value. <br><br>Value can be negative, for example, <code>-10</code> if it decreases the product price.</p>                                                  |
-| selectionModifierType | string | <p>Price modifier type.<br><br>One of: <br><code>PERCENT</code> - Price modifier applies as a percent from the product price.<br><code>ABSOLUTE</code> - Price modifier applies as a flat value.</p> |
+| Field                 | Type   | Description                                                                                                                                                                                                                                                                                                                        |
+| --------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| selectionTitle        | string | Name of the selected option value.                                                                                                                                                                                                                                                                                                 |
+| selectionModifier     | number | <p>Product price modifier when the option is selected. </p><p></p><p>PUT requests <strong>are required</strong> to have a non-zero value in <code>selectionModifier</code> field, if the option modifies the price of the item.<br><br>Value can be negative, for example, <code>-10</code> if it decreases the product price.</p> |
+| selectionModifierType | string | <p>Price modifier type.<br><br>One of: <br><code>PERCENT</code> - Price modifier applies as a percent from the product price.<br><code>ABSOLUTE</code> - Price modifier applies as a flat value.</p>                                                                                                                               |
 
 #### dimensions
 
