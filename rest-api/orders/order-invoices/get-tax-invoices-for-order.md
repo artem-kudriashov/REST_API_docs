@@ -41,7 +41,7 @@ Response:
 
 ### Required access scopes
 
-Your app must have the following **access scopes** to make this request: `read_orders`
+Your app must have the following **access scopes** to make this request: `read_orders` , `read_invoices`
 
 ### Path params
 
