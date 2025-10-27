@@ -9,7 +9,7 @@
 Request:
 
 ```http
-POST /api/v3/1003/categories/9691094 HTTP/1.1
+POST /api/v3/1003/categories HTTP/1.1
 Authorization: Bearer secret_token
 Host: app.ecwid.com
 Content-Type: application/json
@@ -57,10 +57,10 @@ A JSON object with the following fields:
 
 | Field                   | Type                                                   | Description                                                                                                                                                              |
 | ----------------------- | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| parentId                | number                                                 | ID of the parent category, if any.                                                                                                                                       |
+| parentId                | number                                                 | <p>ID of the parent category.<br></p><p>If not specified, new category will be assigned with <code>parentId: 0</code> which is the main store category.</p>              |
 | productIds              | array of numbers                                       | IDs of products assigned to the category as they appear in [Ecwid admin > Catalog > Categories](https://my.ecwid.com/#category). Requires `productIds=true` query param. |
 | orderBy                 | number                                                 | Sorting order of the category. Starts from `10` and increments by `10`.                                                                                                  |
-| name                    | string                                                 | Category name visible on the storefront.                                                                                                                                 |
+| name                    | string                                                 | <p>Category name visible on the storefront.<br><br><strong>Required</strong></p>                                                                                         |
 | nameTranslated          | object [translations](create-category.md#translations) | Available translations for the category name.                                                                                                                            |
 | description             | string                                                 | Category description in HTML format.                                                                                                                                     |
 | descriptionTranslated   | object [translations](create-category.md#translations) | Available translations for the category description.                                                                                                                     |
