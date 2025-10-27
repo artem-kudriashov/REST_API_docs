@@ -76,7 +76,7 @@ The **Authorization** header is required.
 
 A JSON object with the following fields:
 
-<table><thead><tr><th width="179">Field</th><th width="229">Type</th><th>Description</th></tr></thead><tbody><tr><td>name</td><td>string</td><td>Product type name. Empty for the "General" type.</td></tr><tr><td>attributes</td><td>array of objects <a href="create-product-type.md#attributes">attributes</a></td><td>Product attributes assigned to this product type.<br><br><strong>Note:</strong> to add new product attributes, send both new and all existing attributes in the request. Otherwise, the request will delete all attributes currently assigned to the product type.</td></tr></tbody></table>
+<table><thead><tr><th width="179">Field</th><th width="229">Type</th><th>Description</th></tr></thead><tbody><tr><td>name</td><td>string</td><td>Product type name. Empty for the "General" type.<br><br><strong>Required</strong></td></tr><tr><td>attributes</td><td>array of objects <a href="create-product-type.md#attributes">attributes</a></td><td>Product attributes assigned to this product type.<br><br><strong>Note:</strong> to add new product attributes, send both new and all existing attributes in the request. Otherwise, the request will delete all attributes currently assigned to the product type.</td></tr></tbody></table>
 
 #### attributes
 

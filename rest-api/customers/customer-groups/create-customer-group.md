@@ -52,10 +52,10 @@ The **Authorization** header is required.
 
 A JSON object with the following fields:
 
-| Field               | Type   | Description                                                 |
-| ------------------- | ------ | ----------------------------------------------------------- |
-| name                | string | Customer group name visible to customers on the storefront. |
-| externalReferenceId | string | External ID for syncing customer goups with other services. |
+| Field               | Type   | Description                                                                                         |
+| ------------------- | ------ | --------------------------------------------------------------------------------------------------- |
+| name                | string | <p>Customer group name visible to customers on the storefront.<br><br><strong>Required</strong></p> |
+| externalReferenceId | string | External ID for syncing customer goups with other services.                                         |
 
 ### Response JSON
 
