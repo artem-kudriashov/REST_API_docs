@@ -168,6 +168,10 @@ A JSON object with the following fields:
 
 <table><thead><tr><th width="250">Field</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>length</td><td>number</td><td>Length of a product for calculating shipping costs.</td></tr><tr><td>width</td><td>number</td><td>Width of a product for calculating shipping costs.</td></tr><tr><td>height</td><td>number</td><td>Height of a product for calculating shipping costs.</td></tr></tbody></table>
 
+#### wholesalePrices
+
+<table><thead><tr><th>Field</th><th width="128">Type</th><th>Description</th></tr></thead><tbody><tr><td>quantity</td><td>number</td><td>Number of product items on this wholesale tier.</td></tr><tr><td>price</td><td>number</td><td>Product price on the tier.</td></tr></tbody></table>
+
 #### lowestPriceSettings
 
 <table><thead><tr><th>Field</th><th width="142">Type</th><th>Description</th></tr></thead><tbody><tr><td>lowestPriceEnabled</td><td>boolean</td><td>Defines if the lowest price is enabled for the product and shown on the storefront.</td></tr><tr><td>manualLowestPrice</td><td>number</td><td>Manually entered lowest price for the last 30 days before any discounts or taxes applied.</td></tr><tr><td>defaultDisplayedManualLowestPrice</td><td>number</td><td><code>manualLowestPrice</code> with taxes applied.</td></tr><tr><td>defaultDisplayedManualLowestPriceFormatted</td><td>string</td><td>Formatted display of <code>defaultDisplayedManualLowestPrice</code> using store format settings.</td></tr><tr><td>automaticLowestPrice</td><td>number</td><td>Automatically calculated lowest price for the last 30 days before any discounts or taxes applied. <br><br><strong>Read-only</strong></td></tr><tr><td>defaultDisplayedAutomaticLowestPrice</td><td>number</td><td><code>automaticLowestPrice</code> with taxes applied. <br><br><strong>Read-only</strong></td></tr><tr><td>defaultDisplayedAutomaticLowestPriceFormatted</td><td>string</td><td>Formatted display of <code>defaultDisplayedAutomaticLowestPrice</code> using store format settings. <br><br><strong>Read-only</strong></td></tr></tbody></table>
