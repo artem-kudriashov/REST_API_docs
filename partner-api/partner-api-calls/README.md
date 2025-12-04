@@ -1212,18 +1212,19 @@ Response (XML):
 
 Now the partner has a list of stores and profile IDs assigned to them. Partner should choose any of those profile IDs (e.g. the first one) and assign it to all stores of that customer, so that all stores have the same profile ID.
 
-To change the profile ID of the store, the Ecwid's Partner API _/change-store-profile_ endpoint can be used. It requires the following parameters:
+To change the profile ID of the store, the Ecwid's Partner API _/change-store-profile_ endpoint can be used. It requires the following query parameters:
 
-* key: the Partner reseller key
-* ownerid: the store ID
-* src\_profile: the old profile ID
-* dst\_profile: the new profile ID
+* **owner\_id**: the store ID
+* **src\_profile**: the old profile ID
+* **dst\_profile**: the new profile ID
 
-The partner will get 200 OK in response if the profile ID has re-assigned.
+And the **X-API-Key** header with your Reseller API key.
 
-Request:
+`200 OK` response is received if the profile ID has been reassigned.
 
-<mark style="color:blue;">`POST`</mark> `https://my.ecwid.com/resellerapi/v1/change-store-profile?ownerid=123&key=abc123&src_profile=p98765&dst_profile=p55555`
+Request example:
+
+<mark style="color:blue;">`POST`</mark> `https://my.ecwid.com/resellerapi/v1/change-store-profile?owner_id=123&src_profile=p98765&dst_profile=p55555`
 
 When it's done for all stores of the user, the new profile-based SSO API can be used as explained above.
 
