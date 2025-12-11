@@ -101,15 +101,13 @@ You should receive a 404 error, meaning there are no registered stores for this 
 
 To create new Ecwid account just make a POST request to this URL: [https://my.ecwid.com/resellerapi/v1/register?register=y](http://www.google.com/url?q=https%3A%2F%2Fmy.ecwid.com%2Fresellerapi%2Fv1%2Fregister%3Fregister%3Dy\&sa=D\&sntz=1\&usg=AFQjCNHuOiRV3_J264Z-ThIMjYB7RXC6rA)
 
-with these parameters:
+with **X-API-Key** header and the following body parameters:
 
 \- **email**: store email, will be used as a login
 
 \- **password**
 
 \- **name**: Owner full name
-
-\- **key**: API key
 
 \- **plan:** internal name of the active partner plan to create the initial subscription for the store
 
@@ -170,11 +168,11 @@ public class TestClient {
                 new StringPart("email", "test@example.com"),
                 new StringPart("name", "Tester Tester"),
                 new StringPart("password", "tester"),
-                new StringPart("key", "12345"),
                 new StringPart("plan", "ECWID_FREE"),
                 };
         HttpMethodParams params = new HttpMethodParams();
         post.setRequestEntity(new MultipartRequestEntity(parts, params));
+        post.setRequestheader("X-API-Key", "My_key_12345");
 
         if (client.executeMethod(post) != 200) {
             System.err.println("Error creating store: " + post.getStatusLine());
@@ -198,10 +196,9 @@ To change the plan make a POST request to this URL:
 
 [https://my.ecwid.com/resellerapi/v1/subscribe](https://my.ecwid.com/resellerapi/v1/subscribe)
 
-with the following parameters:
+with **X-API-Key** header (your reseller API key) and the following body parameters:
 
 * **ownerid**: the Ecwid store ID, as an integer number
-* **key**: your reseller API key previously used to create the account
 * **plan**: the internal name of the active partner plan to create the initial subscription for the store
 * **billing** (optional): set billing period for the account subscription. Possible values: _monthly,_ _annual_. If parameter is not set then _monthly_ value is used by default.
 
@@ -209,16 +206,15 @@ To unsubscribe from the current plan to the default one make a POST request to t
 
 [https://my.ecwid.com/resellerapi/v1/unsubscribe](https://my.ecwid.com/resellerapi/v1/unsubscribe)
 
-with these parameters:
+with **X-API-Key** header (your reseller API key) and the following body parameters:
 
 * **ownerid**: the Ecwid store ID, as an integer number
-* **key**: your reseller API key previously used to create the account
 
 This will stop your current subscription for the account and bring it back to the free plan, defined for the partner. The same result can be achieved by calling **/subscribe** and specifying your default plan name in the **plan** parameter.
 
 If the request succeeds, the response 200 OK is returned, and the new expiration date is provided in the following XML format:
 
-```
+```xml
 <subscribe-response>
 <expirationDate>2012-05-20T06:44:53.627-04:00</expirationDate>
 </subscribe-response>
@@ -226,7 +222,7 @@ If the request succeeds, the response 200 OK is returned, and the new expiration
 
 If the new subscription has no expiration date, the empty xml is returned:
 
-```
+```xml
 <subscribe-response/>
 ```
 
@@ -234,9 +230,7 @@ If the request fails, the response will contain the reason for the failure, for 
 
 ```
 HTTP ERROR 400
-
 Problem accessing /400. Reason:
-
 Plan 'TEST' not found for partner TestPartner
 ```
 
@@ -248,14 +242,13 @@ To suspend, make a POST HTTP request to the following URL:
 
 [https://my.ecwid.com/resellerapi/v1/suspend](https://my.ecwid.com/resellerapi/v1/suspend)
 
-To resume a previously suspended account, make the following POST HTTP request:
+Both calls require **X-API-Key** header (your reseller API key) and the following body parameters:
 
 [https://my.ecwid.com/resellerapi/v1/resume](https://my.ecwid.com/resellerapi/v1/resume)
 
 The parameters for both calls are the following:
 
 * **ownerid** - the Ecwid store ID, as an integer number
-* **key** - your reseller API key which was used to create the account
 
 On success, both calls return HTTP status 200. Suspending an already suspended account and resuming an already active account makes no effect and returns status code 200.
 
@@ -265,10 +258,9 @@ If you want to delete an account, you should make a POST HTTP request to the fol
 
 [https://my.ecwid.com/resellerapi/v1/delete](https://my.ecwid.com/resellerapi/v1/delete)
 
-The parameters for this call are the following:
+with **X-API-Key** header (your reseller API key) and the following body parameters:
 
 * **ownerid** - the Ecwid store ID you want to delete
-* **key** - your reseller API key
 
 On success, you will see HTTP status 200. If you cannot delete an account (e.g. it wasn't created by you), the 403 HTTP error will be returned.
 
@@ -280,12 +272,15 @@ If you want to get info about one of partner’s stores you should make a POST H
 
 [https://my.ecwid.com/resellerapi/v1/stores](https://my.ecwid.com/resellerapi/v1/stores)
 
-The parameters for this call are the following:
+with **X-API-Key** header (your reseller API key) and the following body parameters:
 
-* **store.id** - the Ecwid store ID information you want to get. **store.ids** for multiple stores
-* **key** - your reseller API key
+* **store.id** - the Ecwid store ID information you want to get
 
-On success, it will return HTTP status 200 and a small XML document containing basic information about the store and its subscription and billing.
+or
+
+* **store.ids** - several comma-separated Ecwid store IDs (used to receive data for multiple stores)
+
+On success, it will return HTTP status 200 and a small XML document containing basic information about each of the requested stores, their subscription and billing.
 
 ### **Checking a user account status**
 
@@ -293,10 +288,9 @@ You can query status information on an account created previously by the **/rese
 
 [https://my.ecwid.com/resellerapi/v1/status](https://my.ecwid.com/resellerapi/v1/status)
 
-The parameters are:
+with **X-API-Key** header (your reseller API key) and the following body parameters:
 
 * **ownerid** - the Ecwid store ID, as an integer number
-* **key** - your reseller API key which was used to create the account
 
 On success, the call returns HTTP status 200 and the XML listing apps installed, information about the store subscription and billing, plan features enabled/disabled, shipping and payment configuration, tax settings and zones:
 
@@ -383,7 +377,7 @@ On error, returns one of the following HTTP status:
 
 You can get the list of active partner plans, available for subscription. To get them make a POST request to this URL:
 
-[https://my.ecwid.com/resellerapi/v1/plans?key=](https://my.ecwid.com/resellerapi/v1/plans?key=)
+[https://my.ecwid.com/resellerapi/v1/plans ](https://my.ecwid.com/resellerapi/v1/plans?key=)with **X-API-Key** header (your reseller API key)
 
 If the request succeeds, the response code 200 is returned, and the response body will contain the list of plans in XML format:
 
@@ -1200,6 +1194,8 @@ Request:
 
 <mark style="color:blue;">`POST`</mark> `https://my.ecwid.com/resellerapi/v1/status`
 
+with **X-API-Key** header (your reseller API key)
+
 Response (XML):
 
 ```xml
@@ -1212,7 +1208,7 @@ Response (XML):
 
 Now the partner has a list of stores and profile IDs assigned to them. Partner should choose any of those profile IDs (e.g. the first one) and assign it to all stores of that customer, so that all stores have the same profile ID.
 
-To change the profile ID of the store, the Ecwid's Partner API _/change-store-profile_ endpoint can be used. It requires the following query parameters:
+To change the profile ID of the store, the Ecwid's Partner API _/change-store-profile_ endpoint can be used. It requires the following query parameters:To change the profile ID of the store, the Ecwid's Partner API _/change-store-profile_ endpoint can be used. It also requires **X-API-Key** header (your reseller API key) and the following body parameters:
 
 * **owner\_id**: the store ID
 * **src\_profile**: the old profile ID
