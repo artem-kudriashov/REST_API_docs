@@ -8,6 +8,8 @@ Please note that our REST API has **rate limits**.
 
 We accept up to **600 requests per minute** **per token**. If you exceed the limit, all subsequent requests will be ignored with an error 429 and a **"Retry-After": N** header (number **N** is a cooldown) . If more requests continue to come from a non-working token, Ecwid will block it for much longer after 20 requests per minute or a total of 600 requests with non-working tokens per IP.
 
+Ecwid API also supports **gzip** encoding through the `"Accept-Encoding": "gzip"` header.
+
 ### Get access to REST API
 
 If you don't yet have access to Ecwid API, follow the detailed instructions in these articles:
