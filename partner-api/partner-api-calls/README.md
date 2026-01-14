@@ -842,13 +842,17 @@ Use the following endpoint to display Ecwid control panel and automatically log 
 
 `my.{domain}/api/v3/{ownerId}/sso?token={token}&timestamp={timestamp}&signature={signature}`&#x20;
 
+{% hint style="warning" %}
+The SSO link received this way expires after **1 hour**.
+{% endhint %}
+
 Make sure SSO access to Control Panel is available only to authorized users. SSO URL contains a REST API token allowing access to store data. Therefore, SSO requests shouldn't be available to users not logged in on your side.
 
 Parameters:
 
 * **domain** - if your instance of Ecwid is located on custom domain please insert it here. Otherwise domain should be ecwid.com
 * **ownerId** - unique numeric identifier of the store. Also known as StoreID
-* **token** - ApiToken that was generated during store creation. Also could be received via oAuth endpoint or via Partner API
+* **token** - ApiToken that was generated during store creation. Also could be received via oAuth endpoint or via Partner API.
 * **timestamp** - UNIX timestamp for current date and time e.g. 1492688357
 * **signature** - is sha256 hash from concatenation of ownerid, token, timestamp and app\_secret without spaces between them: sha256(ownerid+token+timestamp+app\_secret). Signature should be generated without sha256 secret key. _Please generate the signature in lowercase (mandatory!)_
 * **place, inline, logout\_url, upgrade\_url, send\_postmessage\_on\_upgrade\_button\_click** - see parameter description in Single sign-on (SSO) using token mechanism
